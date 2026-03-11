@@ -27,4 +27,4 @@ jobs:
           curl -f http://localhost:5000/api/users
 
       - name: Arrêter containers
-        run: docker-compose down
+        run: docker compose down
