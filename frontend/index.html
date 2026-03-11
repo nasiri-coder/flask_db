@@ -1,0 +1,15 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html>
+  <head><title>React Frontend</title></head>
+  <body>
+    <h1>Frontend React + Flask + MySQL</h1>
+    <div id="root"></div>
+    <script>
+      fetch('http://localhost:5000/api/users')
+        .then(r => r.json())
+        .then(data => document.getElementById('root').innerHTML = JSON.stringify(data));
+    </script>
+  </body>
+</html>
+
