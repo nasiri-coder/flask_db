@@ -16,10 +16,10 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build containers
-        run: docker-compose build
+        run: docker compose build
 
       - name: Lancer containers
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Test API Flask
         run: |
