@@ -1,7 +1,7 @@
 services:
   backend:
     build: ./backend
-    image: nasiricoder26/flask_api:latest
+    image: nasiricoder26/flask-api:latest
     ports:
       - "5000:5000"
     environment:
@@ -14,7 +14,7 @@ services:
 
   frontend:
     build: ./frontend
-    image: nasiricoder26/frontend_app:latest
+    image: nasiricoder26/frontend-app:latest
     ports:
       - "3000:3000"
     depends_on:
