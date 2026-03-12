@@ -6,7 +6,7 @@
     <h1>Frontend React + Flask + MySQL</h1>
     <div id="root"></div>
     <script>
-      fetch('http://localhost:5000/api/users')
+      fetch('http://backend:5000/api/users')
         .then(r => r.json())
         .then(data => document.getElementById('root').innerHTML = JSON.stringify(data));
     </script>
